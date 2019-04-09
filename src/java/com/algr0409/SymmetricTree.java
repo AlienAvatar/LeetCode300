@@ -1,6 +1,16 @@
 package com.algr0409;
 import com.util.TreeNode;
 
+/**
+ * 101
+ * 递归循环
+ * 1.root的左子叶树和右子叶树是否为镜像
+ * 2.判断条件为值不相等，或其中一个节点为空
+ * 3.逐层每个节点进行对比
+ *
+ * 看了答案，比较两个二叉树和可以拿根的左子叶树和根的右子叶树进行比较
+ * 相似问题：比较两个二叉树是否为镜像
+ */
 public class SymmetricTree {
     public boolean isSymmetric(TreeNode root) {
         if(root.left == null){

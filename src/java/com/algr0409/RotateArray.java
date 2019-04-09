@@ -4,6 +4,7 @@ public class RotateArray {
     /**
      * 暴列法
      * [1,2,3,4,5,6,7]和k = 3
+     * 每次替换一个，循环k次
      * @param nums
      * @param k
      */

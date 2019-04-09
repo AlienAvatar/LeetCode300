@@ -7,6 +7,7 @@ public class IntersectionOfTwoArray2 {
     /**
      * Input: nums1 = [1,2,2,1], nums2 = [2,2]
      * Output: [2,2]
+     * 利用HashMap
      * @param nums1
      * @param nums2
      * @return
