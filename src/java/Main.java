@@ -6,6 +6,8 @@ import com.algr0408.NumberOf1Bits;
 import com.algr0408.PascalsTriangle;
 import com.algr0409.IntersectionOfTwoArray2;
 import com.algr0409.RotateArray;
+import com.algr0409.SymmetricTree;
+import com.util.TreeNode;
 
 public class Main {
     public static void main(String[] args) {
@@ -77,11 +79,21 @@ public class Main {
 
         int[] nums = {1,2,3,4,5,6,7};
         RotateArray rotateArray = new RotateArray();
-        rotateArray.rotate(nums,3);*/
+        rotateArray.rotate(nums,3);
 
         int[] nums1 = {1,2,2,1};
         int[] nums2 = {2,2};
         IntersectionOfTwoArray2 intersectionOfTwoArray2 = new IntersectionOfTwoArray2();
-        intersectionOfTwoArray2.intersect(nums1,nums2);
+        intersectionOfTwoArray2.intersect(nums1,nums2);*/
+
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(2);
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(4);
+        root.right.left = new TreeNode(4);
+        root.right.right = new TreeNode(3);
+        SymmetricTree symmetricTree = new SymmetricTree();
+        symmetricTree.isSymmetric(root);
     }
 }
