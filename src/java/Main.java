@@ -7,7 +7,12 @@ import com.algr0408.PascalsTriangle;
 import com.algr0409.IntersectionOfTwoArray2;
 import com.algr0409.RotateArray;
 import com.algr0409.SymmetricTree;
+import com.algr0410.FactorialTrailingZeroes;
+import com.algr0410.PlusOne;
+import com.algr0410.RemoveDuplicatesFormSortedArray;
 import com.util.TreeNode;
+
+import static java.lang.System.out;
 
 public class Main {
     public static void main(String[] args) {
@@ -95,5 +100,17 @@ public class Main {
         root.right.right = new TreeNode(3);
         SymmetricTree symmetricTree = new SymmetricTree();
         symmetricTree.isSymmetric(root);
+
+        int[] digits = {0};
+        PlusOne plusOne = new PlusOne();
+        plusOne.plusOne(digits);
+
+        int[] nums = {1,1,2};
+        RemoveDuplicatesFormSortedArray removeDuplicatesFormSortedArray = new RemoveDuplicatesFormSortedArray();
+        removeDuplicatesFormSortedArray.removeDuplicates(nums);
+
+        FactorialTrailingZeroes factorialTrailingZeroes = new FactorialTrailingZeroes();
+        int re = factorialTrailingZeroes.trailingZeroes(5);
+        out.println(re);
     }
 }
