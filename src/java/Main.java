@@ -1,18 +1,5 @@
-import com.algr0407.ExcelSheetColumnNumber;
-import com.algr0407.FirstUniqueCharacterInAString;
-import com.algr0407.SumOfIntegers;
-import com.algr0408.MissingNumber;
-import com.algr0408.NumberOf1Bits;
-import com.algr0408.PascalsTriangle;
-import com.algr0409.IntersectionOfTwoArray2;
-import com.algr0409.RotateArray;
-import com.algr0409.SymmetricTree;
-import com.algr0410.FactorialTrailingZeroes;
-import com.algr0410.PlusOne;
-import com.algr0410.RemoveDuplicatesFormSortedArray;
-import com.util.TreeNode;
-
-import static java.lang.System.out;
+import com.algr0411.MergeSortedArray;
+import com.algr0411.NumberOf1Bits;
 
 public class Main {
     public static void main(String[] args) {
@@ -91,7 +78,7 @@ public class Main {
         IntersectionOfTwoArray2 intersectionOfTwoArray2 = new IntersectionOfTwoArray2();
         intersectionOfTwoArray2.intersect(nums1,nums2);*/
 
-        TreeNode root = new TreeNode(1);
+        /*TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(2);
         root.left.left = new TreeNode(3);
@@ -111,6 +98,14 @@ public class Main {
 
         FactorialTrailingZeroes factorialTrailingZeroes = new FactorialTrailingZeroes();
         int re = factorialTrailingZeroes.trailingZeroes(5);
-        out.println(re);
+        out.println(re);*/
+
+        int[] nums1 = {1,2,3,0,0,0};
+        int[] nums2 = {2,5,6};
+        MergeSortedArray mergeSortedArray = new MergeSortedArray();
+        mergeSortedArray.merge(nums1,3,nums2,3);
+
+        NumberOf1Bits numberOf1Bits = new NumberOf1Bits();
+        numberOf1Bits.hammingWeight(00000000000000000000000000001011);
     }
 }
