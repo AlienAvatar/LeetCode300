@@ -1,5 +1,6 @@
 import com.algr0411.MergeSortedArray;
 import com.algr0411.NumberOf1Bits;
+import com.algr0412.Sqrt;
 
 public class Main {
     public static void main(String[] args) {
@@ -100,12 +101,16 @@ public class Main {
         int re = factorialTrailingZeroes.trailingZeroes(5);
         out.println(re);*/
 
-        int[] nums1 = {1,2,3,0,0,0};
+        /*int[] nums1 = {1,2,3,0,0,0};
         int[] nums2 = {2,5,6};
         MergeSortedArray mergeSortedArray = new MergeSortedArray();
         mergeSortedArray.merge(nums1,3,nums2,3);
 
         NumberOf1Bits numberOf1Bits = new NumberOf1Bits();
-        numberOf1Bits.hammingWeight(00000000000000000000000000001011);
+        numberOf1Bits.hammingWeight(00000000000000000000000000001011);*/
+
+        Sqrt sqrt = new Sqrt();
+        int re = sqrt.mySqrt(8);
+        System.out.print(re);
     }
 }
