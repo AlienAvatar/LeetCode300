@@ -4,6 +4,8 @@ import com.algr0412.Sqrt;
 import com.algr0413.KthSmallestElementInABST;
 import com.algr0413.LinkedListCycle;
 import com.algr0413.SUM2;
+import com.algr0414.AddBinary;
+import com.algr0414.ArrayPartition1;
 import com.util.ListNode;
 import com.util.TreeNode;
 
@@ -118,7 +120,7 @@ public class Main {
         int re = sqrt.mySqrt(8);
         System.out.print(re);*/
 
-        ListNode node1 = new ListNode(3);
+        /*ListNode node1 = new ListNode(3);
         ListNode node2 = new ListNode(2);
         ListNode node3 = new ListNode(0);
         ListNode node4 = new ListNode(-4);
@@ -144,6 +146,14 @@ public class Main {
         root.left.right = new TreeNode(4);
         root.left.left.left = new TreeNode(1);
         KthSmallestElementInABST kthSmallestElementInABST = new KthSmallestElementInABST();
-        kthSmallestElementInABST.kthSmallest(root,3);
+        kthSmallestElementInABST.kthSmallest(root,3);*/
+
+        AddBinary addBinary = new AddBinary();
+        addBinary.addBinary2("11","1");
+
+        int nums[] = {1,4,3,2};
+        ArrayPartition1 arrayPartition1 = new ArrayPartition1();
+        arrayPartition1.arrayPairSum(nums);
+
     }
 }
