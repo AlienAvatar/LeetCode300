@@ -1,6 +1,11 @@
 import com.algr0411.MergeSortedArray;
 import com.algr0411.NumberOf1Bits;
 import com.algr0412.Sqrt;
+import com.algr0413.KthSmallestElementInABST;
+import com.algr0413.LinkedListCycle;
+import com.algr0413.SUM2;
+import com.util.ListNode;
+import com.util.TreeNode;
 
 public class Main {
     public static void main(String[] args) {
@@ -107,10 +112,38 @@ public class Main {
         mergeSortedArray.merge(nums1,3,nums2,3);
 
         NumberOf1Bits numberOf1Bits = new NumberOf1Bits();
-        numberOf1Bits.hammingWeight(00000000000000000000000000001011);*/
+        numberOf1Bits.hammingWeight(00000000000000000000000000001011);
 
         Sqrt sqrt = new Sqrt();
         int re = sqrt.mySqrt(8);
-        System.out.print(re);
+        System.out.print(re);*/
+
+        ListNode node1 = new ListNode(3);
+        ListNode node2 = new ListNode(2);
+        ListNode node3 = new ListNode(0);
+        ListNode node4 = new ListNode(-4);
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        node4.next = node2;
+        LinkedListCycle linkedListCycle = new LinkedListCycle();
+        boolean re = linkedListCycle.hasCycle(node1);
+        System.out.println(re);
+
+        int[] A = {1,2};
+        int[] B = {-2,-1};
+        int[] C = {-1,2};
+        int[] D = {0,2};
+        SUM2 sum2 = new SUM2();
+        sum2.fourSumCount(A,B,C,D);
+
+        TreeNode root = new TreeNode(5);
+        root.left = new TreeNode(3);
+        root.right = new TreeNode(6);
+        root.left.left = new TreeNode(2);
+        root.left.right = new TreeNode(4);
+        root.left.left.left = new TreeNode(1);
+        KthSmallestElementInABST kthSmallestElementInABST = new KthSmallestElementInABST();
+        kthSmallestElementInABST.kthSmallest(root,3);
     }
 }
