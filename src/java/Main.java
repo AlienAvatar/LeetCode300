@@ -1,13 +1,5 @@
-import com.algr0411.MergeSortedArray;
-import com.algr0411.NumberOf1Bits;
-import com.algr0412.Sqrt;
-import com.algr0413.KthSmallestElementInABST;
-import com.algr0413.LinkedListCycle;
-import com.algr0413.SUM2;
-import com.algr0414.AddBinary;
-import com.algr0414.ArrayPartition1;
-import com.util.ListNode;
-import com.util.TreeNode;
+import com.algr0416.AsteroidCollision;
+import com.algr0416.BackspaceStringCompare;
 
 public class Main {
     public static void main(String[] args) {
@@ -146,14 +138,20 @@ public class Main {
         root.left.right = new TreeNode(4);
         root.left.left.left = new TreeNode(1);
         KthSmallestElementInABST kthSmallestElementInABST = new KthSmallestElementInABST();
-        kthSmallestElementInABST.kthSmallest(root,3);*/
+        kthSmallestElementInABST.kthSmallest(root,3);
 
         AddBinary addBinary = new AddBinary();
         addBinary.addBinary2("11","1");
 
         int nums[] = {1,4,3,2};
         ArrayPartition1 arrayPartition1 = new ArrayPartition1();
-        arrayPartition1.arrayPairSum(nums);
+        arrayPartition1.arrayPairSum(nums);*/
 
+        int asteroids[] = {-2, -1, 1, 2};
+        AsteroidCollision asteroidCollision = new AsteroidCollision();
+        asteroidCollision.asteroidCollision(asteroids);
+
+        BackspaceStringCompare backspaceStringCompare = new BackspaceStringCompare();
+        backspaceStringCompare.backspaceCompare("a#c","b");
     }
 }
