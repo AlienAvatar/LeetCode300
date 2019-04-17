@@ -1,5 +1,7 @@
 import com.algr0416.AsteroidCollision;
 import com.algr0416.BackspaceStringCompare;
+import com.algr0417.BinaryTreeInorderTraversal;
+import com.util.TreeNode;
 
 public class Main {
     public static void main(String[] args) {
@@ -153,5 +155,11 @@ public class Main {
 
         BackspaceStringCompare backspaceStringCompare = new BackspaceStringCompare();
         backspaceStringCompare.backspaceCompare("a#c","b");
+
+        TreeNode root = new TreeNode(1);
+        root.right = new TreeNode(2);
+        root.right.left = new TreeNode(3);
+        BinaryTreeInorderTraversal binaryTreeInorderTraversal = new BinaryTreeInorderTraversal();
+        binaryTreeInorderTraversal.inorderTraversal(root);
     }
 }
