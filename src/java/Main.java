@@ -1,6 +1,8 @@
 import com.algr0416.AsteroidCollision;
 import com.algr0416.BackspaceStringCompare;
 import com.algr0417.BinaryTreeInorderTraversal;
+import com.algr0419.CoinChange;
+import com.algr0419.ComplexNumberMultiplication;
 import com.util.TreeNode;
 
 public class Main {
@@ -147,7 +149,7 @@ public class Main {
 
         int nums[] = {1,4,3,2};
         ArrayPartition1 arrayPartition1 = new ArrayPartition1();
-        arrayPartition1.arrayPairSum(nums);*/
+        arrayPartition1.arrayPairSum(nums);
 
         int asteroids[] = {-2, -1, 1, 2};
         AsteroidCollision asteroidCollision = new AsteroidCollision();
@@ -161,5 +163,12 @@ public class Main {
         root.right.left = new TreeNode(3);
         BinaryTreeInorderTraversal binaryTreeInorderTraversal = new BinaryTreeInorderTraversal();
         binaryTreeInorderTraversal.inorderTraversal(root);
+
+        int[] coins = {1, 2, 5};
+        CoinChange coinChange = new CoinChange();
+        coinChange.coinChange(coins,11);*/
+
+        ComplexNumberMultiplication complexNumberMultiplication = new ComplexNumberMultiplication();
+        complexNumberMultiplication.complexNumberMultiply("1+-1i","0+0i");
     }
 }
