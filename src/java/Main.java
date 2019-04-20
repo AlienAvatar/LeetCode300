@@ -3,6 +3,8 @@ import com.algr0416.BackspaceStringCompare;
 import com.algr0417.BinaryTreeInorderTraversal;
 import com.algr0419.CoinChange;
 import com.algr0419.ComplexNumberMultiplication;
+import com.algr0420.CountCompleteTreeNodes;
+import com.algr0420.CustomSortString;
 import com.util.TreeNode;
 
 public class Main {
@@ -170,5 +172,18 @@ public class Main {
 
         ComplexNumberMultiplication complexNumberMultiplication = new ComplexNumberMultiplication();
         complexNumberMultiplication.complexNumberMultiply("1+-1i","0+0i");
+
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.left = new TreeNode(4);
+        root.left.right = new TreeNode(5);
+        root.right.left = new TreeNode(6);
+        CountCompleteTreeNodes countCompleteTreeNodes = new CountCompleteTreeNodes();
+        int re = countCompleteTreeNodes.countNodes(root);
+        System.out.println(re);
+
+        CustomSortString customSortString = new CustomSortString();
+        customSortString.customSortString("cbafg","abcd");
     }
 }
