@@ -5,6 +5,7 @@ import com.algr0419.CoinChange;
 import com.algr0419.ComplexNumberMultiplication;
 import com.algr0420.CountCompleteTreeNodes;
 import com.algr0420.CustomSortString;
+import com.algr0422.FairCandySwap;
 import com.util.TreeNode;
 
 public class Main {
@@ -185,5 +186,11 @@ public class Main {
 
         CustomSortString customSortString = new CustomSortString();
         customSortString.customSortString("cbafg","abcd");
+
+        int[] A = {1,2,5};
+        int[] B = {2,4};
+        FairCandySwap fairCandySwap = new FairCandySwap();
+        int[] res = fairCandySwap.fairCandySwap(A,B);
+        System.out.println(res[0] + " " + res[1]);
     }
 }
