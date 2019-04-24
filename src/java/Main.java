@@ -6,6 +6,8 @@ import com.algr0419.ComplexNumberMultiplication;
 import com.algr0420.CountCompleteTreeNodes;
 import com.algr0420.CustomSortString;
 import com.algr0422.FairCandySwap;
+import com.algr0423.FlippingAnImage;
+import com.algr0424.FruitIntoBaskets;
 import com.util.TreeNode;
 
 public class Main {
@@ -169,7 +171,7 @@ public class Main {
 
         int[] coins = {1, 2, 5};
         CoinChange coinChange = new CoinChange();
-        coinChange.coinChange(coins,11);*/
+        coinChange.coinChange(coins,11);
 
         ComplexNumberMultiplication complexNumberMultiplication = new ComplexNumberMultiplication();
         complexNumberMultiplication.complexNumberMultiply("1+-1i","0+0i");
@@ -191,6 +193,14 @@ public class Main {
         int[] B = {2,4};
         FairCandySwap fairCandySwap = new FairCandySwap();
         int[] res = fairCandySwap.fairCandySwap(A,B);
-        System.out.println(res[0] + " " + res[1]);
+        System.out.println(res[0] + " " + res[1]);*/
+
+        int[][] arr = {{1,1,0},{1,0,1},{0,0,0}};
+        FlippingAnImage flippingAnImage = new FlippingAnImage();
+        flippingAnImage.flipAndInvertImage(arr);
+
+        int[] tree = {1,2,1};
+        FruitIntoBaskets fruitIntoBaskets = new FruitIntoBaskets();
+        fruitIntoBaskets.totalFruit(tree);
     }
 }
