@@ -8,6 +8,7 @@ import com.algr0420.CustomSortString;
 import com.algr0422.FairCandySwap;
 import com.algr0423.FlippingAnImage;
 import com.algr0424.FruitIntoBaskets;
+import com.algr0425.GoatLatin;
 import com.util.TreeNode;
 
 public class Main {
@@ -202,5 +203,8 @@ public class Main {
         int[] tree = {1,2,1};
         FruitIntoBaskets fruitIntoBaskets = new FruitIntoBaskets();
         fruitIntoBaskets.totalFruit(tree);
+
+        GoatLatin goatLatin = new GoatLatin();
+        goatLatin.toGoatLatin("The quick brown fox jumped over the lazy dog");
     }
 }
