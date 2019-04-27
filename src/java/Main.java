@@ -1,15 +1,12 @@
-import com.algr0416.AsteroidCollision;
-import com.algr0416.BackspaceStringCompare;
-import com.algr0417.BinaryTreeInorderTraversal;
-import com.algr0419.CoinChange;
-import com.algr0419.ComplexNumberMultiplication;
-import com.algr0420.CountCompleteTreeNodes;
-import com.algr0420.CustomSortString;
-import com.algr0422.FairCandySwap;
 import com.algr0423.FlippingAnImage;
 import com.algr0424.FruitIntoBaskets;
 import com.algr0425.GoatLatin;
-import com.util.TreeNode;
+import com.algr0425.IntersectionOfTwoArrays;
+import com.algr0427.IsomorphicStrings;
+import com.algr0427.KeysAndRooms;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -206,5 +203,29 @@ public class Main {
 
         GoatLatin goatLatin = new GoatLatin();
         goatLatin.toGoatLatin("The quick brown fox jumped over the lazy dog");
+
+        int[] nums1 = {4,9,5};
+        int[] nums2 = {9,4,9,8,4};
+        IntersectionOfTwoArrays intersectionOfTwoArrays = new IntersectionOfTwoArrays();
+        intersectionOfTwoArrays.intersection(nums1,nums2);
+
+        IsomorphicStrings isomorphicStrings = new IsomorphicStrings();
+        isomorphicStrings.isIsomorphic("paper","title");
+
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(1);
+        List<Integer> list2 = new ArrayList<>();
+        list2.add(2);
+        List<Integer> list3 = new ArrayList<>();
+        list3.add(3);
+        List<Integer> list4 = new ArrayList<>();
+        //list.add(null);
+        List<List<Integer>> lists = new ArrayList<>();
+        lists.add(list1);
+        lists.add(list2);
+        lists.add(list3);
+        lists.add(list4);
+        KeysAndRooms keysAndRooms = new KeysAndRooms();
+        keysAndRooms.canVisitAllRooms(lists);
     }
 }
