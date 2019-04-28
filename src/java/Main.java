@@ -4,6 +4,7 @@ import com.algr0425.GoatLatin;
 import com.algr0425.IntersectionOfTwoArrays;
 import com.algr0427.IsomorphicStrings;
 import com.algr0427.KeysAndRooms;
+import com.algr0428.LargestTimeForGivenDigits;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -227,5 +228,10 @@ public class Main {
         lists.add(list4);
         KeysAndRooms keysAndRooms = new KeysAndRooms();
         keysAndRooms.canVisitAllRooms(lists);
+
+        int[] A = {0,0,0,0};
+        LargestTimeForGivenDigits largestTimeForGivenDigits = new LargestTimeForGivenDigits();
+        String re = largestTimeForGivenDigits.largestTimeFromDigits(A);
+        System.out.println(re);
     }
 }
