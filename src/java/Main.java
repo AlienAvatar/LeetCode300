@@ -5,6 +5,9 @@ import com.algr0425.IntersectionOfTwoArrays;
 import com.algr0427.IsomorphicStrings;
 import com.algr0427.KeysAndRooms;
 import com.algr0428.LargestTimeForGivenDigits;
+import com.algr0509.MaximumDepthofBinaryTree;
+import com.algr0510.WordSubsets;
+import com.util.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -194,7 +197,7 @@ public class Main {
         int[] res = fairCandySwap.fairCandySwap(A,B);
         System.out.println(res[0] + " " + res[1]);*/
 
-        int[][] arr = {{1,1,0},{1,0,1},{0,0,0}};
+        /*int[][] arr = {{1,1,0},{1,0,1},{0,0,0}};
         FlippingAnImage flippingAnImage = new FlippingAnImage();
         flippingAnImage.flipAndInvertImage(arr);
 
@@ -232,6 +235,19 @@ public class Main {
         int[] A = {0,0,0,0};
         LargestTimeForGivenDigits largestTimeForGivenDigits = new LargestTimeForGivenDigits();
         String re = largestTimeForGivenDigits.largestTimeFromDigits(A);
-        System.out.println(re);
+        System.out.println(re);*/
+
+        /*TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.left.left = new TreeNode(15);
+        root.left.right = new TreeNode(7);
+        MaximumDepthofBinaryTree maximumDepthofBinaryTree = new MaximumDepthofBinaryTree();
+        maximumDepthofBinaryTree.maxDepth(root);*/
+
+        String[] A = {"amazon","apple","facebook","google","leetcode"};
+        String[] B = {"lo","eo"};
+        WordSubsets wordSubsets = new WordSubsets();
+        wordSubsets.wordSubsets(A,B);
     }
 }
