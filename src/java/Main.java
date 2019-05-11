@@ -7,6 +7,7 @@ import com.algr0427.KeysAndRooms;
 import com.algr0428.LargestTimeForGivenDigits;
 import com.algr0509.MaximumDepthofBinaryTree;
 import com.algr0510.WordSubsets;
+import com.algr0511.ValidateBinarySearchTree;
 import com.util.TreeNode;
 
 import java.util.ArrayList;
@@ -249,5 +250,11 @@ public class Main {
         String[] B = {"lo","eo"};
         WordSubsets wordSubsets = new WordSubsets();
         wordSubsets.wordSubsets(A,B);
+
+        TreeNode root = new TreeNode(2);
+        root.left = new TreeNode(1);
+        root.right = new TreeNode(3);
+        ValidateBinarySearchTree validateBinarySearchTree = new ValidateBinarySearchTree();
+        validateBinarySearchTree.isValidBST(root);
     }
 }
