@@ -1,4 +1,5 @@
 import com.algr0512.ValidPerfectSquare;
+import com.algr0514.TransposeMatrix;
 import com.algr0514.UniqueMorseCodeWords;
 import com.algr0514.UniquePaths2;
 
@@ -256,5 +257,9 @@ public class Main {
         String[] strs= {"gin", "zen", "gig", "msg"};
         UniqueMorseCodeWords uniqueMorseCodeWords = new UniqueMorseCodeWords();
         uniqueMorseCodeWords.uniqueMorseRepresentations(strs);
+
+        int[][] A = {{1,2,3},{4,5,6},{7,8,9}};
+        TransposeMatrix transposeMatrix = new TransposeMatrix();
+        transposeMatrix.transpose(A);
     }
 }
