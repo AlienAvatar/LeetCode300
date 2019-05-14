@@ -1,17 +1,6 @@
-import com.algr0423.FlippingAnImage;
-import com.algr0424.FruitIntoBaskets;
-import com.algr0425.GoatLatin;
-import com.algr0425.IntersectionOfTwoArrays;
-import com.algr0427.IsomorphicStrings;
-import com.algr0427.KeysAndRooms;
-import com.algr0428.LargestTimeForGivenDigits;
-import com.algr0509.MaximumDepthofBinaryTree;
-import com.algr0510.WordSubsets;
-import com.algr0511.ValidateBinarySearchTree;
-import com.util.TreeNode;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.algr0512.ValidPerfectSquare;
+import com.algr0514.UniqueMorseCodeWords;
+import com.algr0514.UniquePaths2;
 
 public class Main {
     public static void main(String[] args) {
@@ -246,7 +235,7 @@ public class Main {
         MaximumDepthofBinaryTree maximumDepthofBinaryTree = new MaximumDepthofBinaryTree();
         maximumDepthofBinaryTree.maxDepth(root);*/
 
-        String[] A = {"amazon","apple","facebook","google","leetcode"};
+        /*String[] A = {"amazon","apple","facebook","google","leetcode"};
         String[] B = {"lo","eo"};
         WordSubsets wordSubsets = new WordSubsets();
         wordSubsets.wordSubsets(A,B);
@@ -255,6 +244,17 @@ public class Main {
         root.left = new TreeNode(1);
         root.right = new TreeNode(3);
         ValidateBinarySearchTree validateBinarySearchTree = new ValidateBinarySearchTree();
-        validateBinarySearchTree.isValidBST(root);
+        validateBinarySearchTree.isValidBST(root);*/
+
+        ValidPerfectSquare validPerfectSquare = new ValidPerfectSquare();
+        validPerfectSquare.isPerfectSquare(14);
+
+        int[][] nums = {{0,0,0},{0,1,0},{0,0,0}};
+        UniquePaths2 uniquePaths2 = new UniquePaths2();
+        uniquePaths2.uniquePathsWithObstacles(nums);
+
+        String[] strs= {"gin", "zen", "gig", "msg"};
+        UniqueMorseCodeWords uniqueMorseCodeWords = new UniqueMorseCodeWords();
+        uniqueMorseCodeWords.uniqueMorseRepresentations(strs);
     }
 }
