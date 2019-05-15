@@ -2,6 +2,7 @@ import com.algr0512.ValidPerfectSquare;
 import com.algr0514.TransposeMatrix;
 import com.algr0514.UniqueMorseCodeWords;
 import com.algr0514.UniquePaths2;
+import com.algr0515.UncommonWordsFromTwoSentences;
 
 public class Main {
     public static void main(String[] args) {
@@ -261,5 +262,8 @@ public class Main {
         int[][] A = {{1,2,3},{4,5,6},{7,8,9}};
         TransposeMatrix transposeMatrix = new TransposeMatrix();
         transposeMatrix.transpose(A);
+
+        UncommonWordsFromTwoSentences uncommonWordsFromTwoSentences = new UncommonWordsFromTwoSentences();
+        uncommonWordsFromTwoSentences.uncommonFromSentences("apple apple","banana");
     }
 }
