@@ -3,6 +3,8 @@ import com.algr0514.TransposeMatrix;
 import com.algr0514.UniqueMorseCodeWords;
 import com.algr0514.UniquePaths2;
 import com.algr0515.UncommonWordsFromTwoSentences;
+import com.algr0516.MonotonicArray;
+import com.algr0516.TrappingRainWater;
 
 public class Main {
     public static void main(String[] args) {
@@ -248,7 +250,7 @@ public class Main {
         ValidateBinarySearchTree validateBinarySearchTree = new ValidateBinarySearchTree();
         validateBinarySearchTree.isValidBST(root);*/
 
-        ValidPerfectSquare validPerfectSquare = new ValidPerfectSquare();
+        /*ValidPerfectSquare validPerfectSquare = new ValidPerfectSquare();
         validPerfectSquare.isPerfectSquare(14);
 
         int[][] nums = {{0,0,0},{0,1,0},{0,0,0}};
@@ -264,6 +266,14 @@ public class Main {
         transposeMatrix.transpose(A);
 
         UncommonWordsFromTwoSentences uncommonWordsFromTwoSentences = new UncommonWordsFromTwoSentences();
-        uncommonWordsFromTwoSentences.uncommonFromSentences("apple apple","banana");
+        uncommonWordsFromTwoSentences.uncommonFromSentences("apple apple","banana");*/
+
+        int[] A = {1,1,1};
+        MonotonicArray monotonicArray = new MonotonicArray();
+        monotonicArray.isMonotonic(A);
+
+        int[] height = {2,0,2};
+        TrappingRainWater trappingRainWater = new TrappingRainWater();
+        trappingRainWater.trap(height);
     }
 }
