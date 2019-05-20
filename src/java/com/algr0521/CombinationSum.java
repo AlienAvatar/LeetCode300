@@ -1,0 +1,30 @@
+package com.algr0521;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class CombinationSum {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> list = new ArrayList<>();
+        Arrays.sort(candidates);
+        helper(list,new ArrayList<Integer>(),candidates,target,0);
+        return list;
+    }
+
+    private void helper(List<List<Integer>> list,List<Integer> tempList,int[] nums,int redain,int start){
+        if(redain < 0){
+            return;
+        }else if(redain == 0){
+            list.add(new ArrayList<Integer>(tempList));
+        }else{
+            for(int i = start; i < nums.length; i++){
+                tempList.add(nums[i]);
+                helper(list,tempList,nums,redain - nums[i],i);
+                tempList.remove(tempList.size()-1);
+            }
+        }
+
+    }
+
+}

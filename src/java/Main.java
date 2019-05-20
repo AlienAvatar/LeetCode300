@@ -5,6 +5,7 @@ import com.algr0514.UniquePaths2;
 import com.algr0515.UncommonWordsFromTwoSentences;
 import com.algr0516.MonotonicArray;
 import com.algr0516.TrappingRainWater;
+import com.algr0521.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -268,12 +269,36 @@ public class Main {
         UncommonWordsFromTwoSentences uncommonWordsFromTwoSentences = new UncommonWordsFromTwoSentences();
         uncommonWordsFromTwoSentences.uncommonFromSentences("apple apple","banana");*/
 
-        int[] A = {1,1,1};
+        /*int[] A = {1,1,1};
         MonotonicArray monotonicArray = new MonotonicArray();
         monotonicArray.isMonotonic(A);
+        
 
         int[] height = {2,0,2};
         TrappingRainWater trappingRainWater = new TrappingRainWater();
         trappingRainWater.trap(height);
+
+        int[] nums = {10,1,2,7,6,1,5};
+        CombinationSum combinationSum = new CombinationSum();
+        combinationSum.combinationSum(nums,8);
+
+        int[] nums = {2,5,2,1,2};
+        CombinationSum2 combinationSum2 = new CombinationSum2();
+        combinationSum2.combinationSum2(nums,5);
+
+        int[] nums = {1,2,3};
+        Permutations permutations = new Permutations();
+        permutations.permute(nums);*/
+
+        /*PermutationSequence permutationSequence = new PermutationSequence();
+        permutationSequence.getPermutation(3,3);
+
+        int[] nums = {1,1,2};
+        Permutations2 permutations = new Permutations2();
+        permutations.permuteUnique(nums);*/
+
+        int[][] matrix = {{1,2,3,4},{5,1,2,3},{9,5,1,2}};
+        ToeplitzMatrix toeplitzMatrix = new ToeplitzMatrix();
+        toeplitzMatrix.isToeplitzMatrix(matrix);
     }
 }
