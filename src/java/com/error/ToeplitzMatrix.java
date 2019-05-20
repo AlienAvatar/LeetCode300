@@ -1,4 +1,4 @@
-package com.algr0521;
+package com.error;
 
 public class ToeplitzMatrix {
     public boolean isToeplitzMatrix(int[][] matrix) {

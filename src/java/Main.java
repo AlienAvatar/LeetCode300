@@ -1,11 +1,4 @@
-import com.algr0512.ValidPerfectSquare;
-import com.algr0514.TransposeMatrix;
-import com.algr0514.UniqueMorseCodeWords;
-import com.algr0514.UniquePaths2;
-import com.algr0515.UncommonWordsFromTwoSentences;
-import com.algr0516.MonotonicArray;
-import com.algr0516.TrappingRainWater;
-import com.algr0521.*;
+import com.error.ToeplitzMatrix;
 
 public class Main {
     public static void main(String[] args) {

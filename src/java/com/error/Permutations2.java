@@ -1,4 +1,4 @@
-package com.algr0521;
+package com.error;
 
 import java.util.ArrayList;
 import java.util.Arrays;
