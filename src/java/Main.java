@@ -1,3 +1,5 @@
+import com.algr0522.Permutations2;
+import com.algr0522.Subset2;
 import com.error.ToeplitzMatrix;
 
 public class Main {
@@ -290,8 +292,16 @@ public class Main {
         Permutations2 permutations = new Permutations2();
         permutations.permuteUnique(nums);*/
 
-        int[][] matrix = {{1,2,3,4},{5,1,2,3},{9,5,1,2}};
+       /* int[][] matrix = {{1,2,3,4},{5,1,2,3},{9,5,1,2}};
         ToeplitzMatrix toeplitzMatrix = new ToeplitzMatrix();
-        toeplitzMatrix.isToeplitzMatrix(matrix);
+        toeplitzMatrix.isToeplitzMatrix(matrix);*/
+
+        int[] nums = {1,1,2};
+        Permutations2 permutations = new Permutations2();
+        permutations.permuteUnique(nums);
+
+        int[] nums2 = {1,2,2};
+        Subset2 subset2 = new Subset2();
+        subset2.subsetsWithDup(nums2);
     }
 }
