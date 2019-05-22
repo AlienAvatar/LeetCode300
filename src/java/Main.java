@@ -1,6 +1,6 @@
-import com.algr0522.Permutations2;
-import com.algr0522.Subset2;
-import com.error.ToeplitzMatrix;
+import com.error.ContainsDuplicate2;
+import com.algr0522.ToeplitzMatrix;
+import com.algr0522.ValidMountainArray;
 
 public class Main {
     public static void main(String[] args) {
@@ -292,16 +292,25 @@ public class Main {
         Permutations2 permutations = new Permutations2();
         permutations.permuteUnique(nums);*/
 
-       /* int[][] matrix = {{1,2,3,4},{5,1,2,3},{9,5,1,2}};
-        ToeplitzMatrix toeplitzMatrix = new ToeplitzMatrix();
-        toeplitzMatrix.isToeplitzMatrix(matrix);*/
-
-        int[] nums = {1,1,2};
+        /*int[] nums = {1,1,2};
         Permutations2 permutations = new Permutations2();
         permutations.permuteUnique(nums);
 
         int[] nums2 = {1,2,2};
         Subset2 subset2 = new Subset2();
-        subset2.subsetsWithDup(nums2);
+        subset2.subsetsWithDup(nums2);*/
+
+        //int[][] matrix = {{1,2,3,4},{5,1,2,3},{9,5,1,2}};
+        int[][] matrix = {{0,33,98},{34,22,33}};
+        ToeplitzMatrix toeplitzMatrix = new ToeplitzMatrix();
+        toeplitzMatrix.isToeplitzMatrix(matrix);
+
+        int[] A = {0,3,2,1};
+        ValidMountainArray validMountainArray = new ValidMountainArray();
+        validMountainArray.validMountainArray(A);
+
+        int[] nums = {0,1,2,3,2,5};
+        ContainsDuplicate2 containsDuplicate2 = new ContainsDuplicate2();
+        containsDuplicate2.containsNearbyDuplicate(nums,3);
     }
 }
