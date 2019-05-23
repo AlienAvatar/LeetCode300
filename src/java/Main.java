@@ -1,6 +1,9 @@
-import com.error.ContainsDuplicate2;
+import com.algr0523.ContainsDuplicate2;
 import com.algr0522.ToeplitzMatrix;
 import com.algr0522.ValidMountainArray;
+import com.algr0523.FindPairs;
+import com.algr0523.SortArrayByParity;
+import com.algr0523.SortArrayByParity2;
 
 public class Main {
     public static void main(String[] args) {
@@ -301,16 +304,28 @@ public class Main {
         subset2.subsetsWithDup(nums2);*/
 
         //int[][] matrix = {{1,2,3,4},{5,1,2,3},{9,5,1,2}};
-        int[][] matrix = {{0,33,98},{34,22,33}};
+        /*int[][] matrix = {{0,33,98},{34,22,33}};
         ToeplitzMatrix toeplitzMatrix = new ToeplitzMatrix();
         toeplitzMatrix.isToeplitzMatrix(matrix);
 
         int[] A = {0,3,2,1};
         ValidMountainArray validMountainArray = new ValidMountainArray();
-        validMountainArray.validMountainArray(A);
+        validMountainArray.validMountainArray(A);*/
 
-        int[] nums = {0,1,2,3,2,5};
+        /*int[] nums = {1,2,3,1,2,3};
         ContainsDuplicate2 containsDuplicate2 = new ContainsDuplicate2();
-        containsDuplicate2.containsNearbyDuplicate(nums,3);
+        containsDuplicate2.containsNearbyDuplicate(nums,2);
+
+        int[] A = {3,1,2,4};
+        SortArrayByParity sortArrayByParity = new SortArrayByParity();
+        sortArrayByParity.sortArrayByParity(A);*/
+
+        int[] A = {4,2,5,7};
+        SortArrayByParity2 sortArrayByParity2 = new SortArrayByParity2();
+        sortArrayByParity2.sortArrayByParityII(A);
+
+        int[] nums = {3, 1, 4, 1, 5};
+        FindPairs findPairs = new FindPairs();
+        findPairs.findPairs(nums,2);
     }
 }
