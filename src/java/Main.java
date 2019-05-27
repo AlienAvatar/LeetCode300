@@ -1,9 +1,4 @@
-import com.algr0523.ContainsDuplicate2;
-import com.algr0522.ToeplitzMatrix;
-import com.algr0522.ValidMountainArray;
-import com.algr0523.FindPairs;
-import com.algr0523.SortArrayByParity;
-import com.algr0523.SortArrayByParity2;
+import com.algr0527.FindCommonCharacters;
 
 public class Main {
     public static void main(String[] args) {
@@ -320,12 +315,24 @@ public class Main {
         SortArrayByParity sortArrayByParity = new SortArrayByParity();
         sortArrayByParity.sortArrayByParity(A);*/
 
-        int[] A = {4,2,5,7};
+        /*int[] A = {4,2,5,7};
         SortArrayByParity2 sortArrayByParity2 = new SortArrayByParity2();
         sortArrayByParity2.sortArrayByParityII(A);
 
         int[] nums = {3, 1, 4, 1, 5};
         FindPairs findPairs = new FindPairs();
-        findPairs.findPairs(nums,2);
+        findPairs.findPairs(nums,2);*/
+
+        /*int[] A = {-7,-3,2,3,11};
+        SquaresofaSortedArray squaresofaSortedArray = new SquaresofaSortedArray();
+        squaresofaSortedArray.sortedSquares(A);
+
+
+        FibonacciNumber fibonacciNumber = new FibonacciNumber();
+        fibonacciNumber.fib(4);*/
+
+        String[] A = {"bella","label","roller","bel"};
+        FindCommonCharacters findCommonCharacters = new FindCommonCharacters();
+        findCommonCharacters.ducommonChars(A);
     }
 }
