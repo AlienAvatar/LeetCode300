@@ -1,4 +1,6 @@
 import com.algr0527.FindCommonCharacters;
+import com.algr0528.LargestNumberAtLeastTwiceofOthers;
+import com.algr0528.MaximumAverageSubarray;
 
 public class Main {
     public static void main(String[] args) {
@@ -331,8 +333,16 @@ public class Main {
         FibonacciNumber fibonacciNumber = new FibonacciNumber();
         fibonacciNumber.fib(4);*/
 
-        String[] A = {"bella","label","roller","bel"};
+        /*String[] A = {"bella","label","roller","bel"};
         FindCommonCharacters findCommonCharacters = new FindCommonCharacters();
         findCommonCharacters.ducommonChars(A);
+
+        int[] nums = {5};
+        MaximumAverageSubarray maximumAverageSubarray = new MaximumAverageSubarray();
+        maximumAverageSubarray.findMaxAverage(nums,1);*/
+
+        int[] nums = {1,0};
+        LargestNumberAtLeastTwiceofOthers largestNumberAtLeastTwiceofOthers = new LargestNumberAtLeastTwiceofOthers();
+        largestNumberAtLeastTwiceofOthers.dominantIndex(nums);
     }
 }
