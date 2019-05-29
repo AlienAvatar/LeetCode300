@@ -1,6 +1,7 @@
 import com.algr0527.FindCommonCharacters;
 import com.algr0528.LargestNumberAtLeastTwiceofOthers;
 import com.algr0528.MaximumAverageSubarray;
+import com.algr0529.NextArray;
 
 public class Main {
     public static void main(String[] args) {
@@ -344,5 +345,9 @@ public class Main {
         int[] nums = {1,0};
         LargestNumberAtLeastTwiceofOthers largestNumberAtLeastTwiceofOthers = new LargestNumberAtLeastTwiceofOthers();
         largestNumberAtLeastTwiceofOthers.dominantIndex(nums);
+
+        int[] seats = {1,0,0,0};
+        NextArray nextArray = new NextArray();
+        nextArray.maxDistToClosest(seats);
     }
 }
