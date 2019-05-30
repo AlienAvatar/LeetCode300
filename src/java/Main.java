@@ -2,6 +2,8 @@ import com.algr0527.FindCommonCharacters;
 import com.algr0528.LargestNumberAtLeastTwiceofOthers;
 import com.algr0528.MaximumAverageSubarray;
 import com.algr0529.NextArray;
+import com.algr0530.FindPivotIndex;
+import com.algr0530.SetMisMatch;
 
 public class Main {
     public static void main(String[] args) {
@@ -342,12 +344,20 @@ public class Main {
         MaximumAverageSubarray maximumAverageSubarray = new MaximumAverageSubarray();
         maximumAverageSubarray.findMaxAverage(nums,1);*/
 
-        int[] nums = {1,0};
+        /*int[] nums = {1,0};
         LargestNumberAtLeastTwiceofOthers largestNumberAtLeastTwiceofOthers = new LargestNumberAtLeastTwiceofOthers();
         largestNumberAtLeastTwiceofOthers.dominantIndex(nums);
 
         int[] seats = {1,0,0,0};
         NextArray nextArray = new NextArray();
-        nextArray.maxDistToClosest(seats);
+        nextArray.maxDistToClosest(seats);*/
+
+        int[] nums = {1, 7, 3, 6, 5, 6};
+        FindPivotIndex findPivotIndex = new FindPivotIndex();
+        findPivotIndex.pivotIndex(nums);
+
+        /*int[] nums = {3,2,2};
+        SetMisMatch setMisMatch = new SetMisMatch();
+        setMisMatch.findErrorNums(nums);*/
     }
 }
